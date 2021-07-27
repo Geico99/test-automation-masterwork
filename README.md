@@ -7,5 +7,5 @@ Futtatási metódus és az automatizált tesztesetekhez szükséges információ
 
 - A tesztek Java nyelven kerültek megírásra IntelliJ IDEA segítségével Gradle projektben
 - A tesztek futtatásához először klónozza ezt a repositoryt
-- Nyissa meg a saját gépén a projketet IntelliJ és Gradle segítségével
-- Adja ki a gradle test parancsot az Intellij terminalján keresztül
+- Nyissa meg a saját gépén a projektet IntelliJ és Gradle segítségével
+- Adja ki a gradle test parancsot az IntelliJ terminalján keresztül
