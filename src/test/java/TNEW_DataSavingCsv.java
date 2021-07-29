@@ -37,10 +37,8 @@ public class TNEW_DataSavingCsv {
                         ("//input[@name='email' and @class='form-control']"))).sendKeys(email);
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
         driver.findElement(By.id("submit-login")).click();
-
         wait.until(ExpectedConditions.presenceOfElementLocated( By.xpath
                 ("//a[@title='View my customer account']"))).click();
-
         wait.until(ExpectedConditions.elementToBeClickable(By.id("address-link"))).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Ecommerce")));
         driver.findElement(By.xpath("//input[@name='address1']")).sendKeys(address);
@@ -48,10 +46,8 @@ public class TNEW_DataSavingCsv {
         driver.findElement(By.xpath("//input[@name='postcode']")).sendKeys(postalCode);
 
         Select state = new Select(driver.findElement(By.name("id_state")));
-        state.selectByVisibleText("Alaska");
-
+        state.selectByVisibleText("California");
         driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
-
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath
                 ("//article[@data-alert='success']/ul/li[contains(text(),'Address successfully added!')]")));
     }
