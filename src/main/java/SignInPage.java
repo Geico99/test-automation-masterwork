@@ -10,8 +10,8 @@ public class SignInPage {
         this.driver = driver;
     }
 
-    public void open() {
-        driver.get("http://test-automation-shop1.greenfox.academy/login?create_account=1");
+    public void open() {driver.get
+            ("http://test-automation-shop1.greenfox.academy/login?create_account=1");
     }
 
     @FindBy(xpath = "//*[@id='customer-form']/section/div[1]/div[1]/label[1]/span/input")

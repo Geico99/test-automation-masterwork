@@ -1,8 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,7 +19,7 @@ public class BaseTest {
     protected static JavascriptExecutor js = null;
     private static Properties props = new Properties();
 
-    @BeforeAll
+    @BeforeEach
     public static void setUp() throws IOException {
         InputStream is = BaseTest.class.getResourceAsStream("/browser.properties");
         props.load(is);
@@ -32,7 +30,7 @@ public class BaseTest {
 
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
-        driver.manage().window().setSize(new Dimension(900, 900));
+        driver.manage().window().maximize ();
         js = (JavascriptExecutor)driver;
 
         driver.get ( "http://test-automation-shop1.greefox.academy/" );
@@ -73,7 +71,7 @@ public class BaseTest {
 
     }
 
-    @AfterAll
+    @AfterEach
     public static void cleanup() {
         driver.quit();
     }
