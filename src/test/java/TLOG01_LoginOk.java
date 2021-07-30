@@ -1,10 +1,19 @@
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.support.PageFactory;
 
 public class TLOG01_LoginOk extends BaseTest {
 
     @Test
-    public void loginSuccesfully(){
-        login ();
+    @DisplayName ( "Login succesful, (TLOG01 OK)" )
+
+    public void successfullyLogin(){
+    HomePage home = PageFactory.initElements ( driver, HomePage.class );
+    LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
+    home.navigatToSignIn ();
+    login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
+        Assertions.assertThat ();
     }
 }
 

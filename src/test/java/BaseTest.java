@@ -39,38 +39,6 @@ public class BaseTest {
 
     }
 
-    public void login() {
-        String email = "kissbelaa@gmail.com";
-        String password = "kisbelaalegjobb";
-
-        driver.findElement ( By.xpath ( "//*[@id=\"_desktop_user_info\"]/div/a/span" ) ).click ();
-        wait.until ( ExpectedConditions.elementToBeClickable
-                ( By.xpath ( "//*[@id=\"login-form\"]/section/div[1]/div[1]/input" ) ) ).sendKeys ( email );
-        driver.findElement ( By.xpath
-                ( "//*[@id=\"login-form\"]/section/div[2]/div[1]/div/input" ) ).sendKeys ( password );
-        driver.findElement ( By.id ( "submit-login" ) ).click ();
-        wait.until ( ExpectedConditions.visibilityOfElementLocated
-                ( By.xpath ( "//*[@id=\"_desktop_user_info\"]/div/a[2]/span" ) ) );
-    }
-
-    public WebElement addProduct() {
-        driver.findElement ( By.xpath ( "//*[@id=\"category-3\"]/a" ) ).click ();
-        wait.until ( ExpectedConditions.elementToBeClickable ( By.xpath
-                ( "//*[@id=\"js-product-list\"]/div[1]/div[1]/article/div/a/img" ) ) ).click ();
-        wait.until ( ExpectedConditions.elementToBeClickable ( By.xpath
-                ( "//*[@id=\"add-to-cart-or-refresh\"]/div[2]/div/div[2]/button" ) ) ).click ();
-        wait.until ( ExpectedConditions.elementToBeClickable ( By.xpath
-                ( "//*[@id=\"blockcart-modal\"]/div/div/div[2]/div/div[2]/div/div/a" ) ) ).click ();
-        wait.until ( ExpectedConditions.presenceOfElementLocated ( By.xpath
-                ( "//*[@id=\"main\"]/div/div[1]/div/div[2]/ul/li/div/div[1]/span/img" ) ) );
-
-        WebElement productInCart = driver.findElement ( By.xpath
-                ( "//*[@id=\"main\"]/div/div[1]/div/div[2]/ul/li/div/div[2]/div[1]/a" ) );
-
-        return productInCart;
-
-    }
-
     @AfterEach
     public static void cleanup() {
         driver.quit();
