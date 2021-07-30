@@ -15,7 +15,7 @@ public class TermAndCondPage extends BasePage{
         super(driver);
     }
     public void loadTermPage () {
-        driver.get ( "https://test-automation-shop1.greenfox.academy/content/3-terms-and-contidion-of-use" );
+        driver.get ("https://test-automation-shop1.greenfox.academy/content/3-terms-and-contidion-of-use");
     }
     public void closeTermPage(){
         driver.close ();
