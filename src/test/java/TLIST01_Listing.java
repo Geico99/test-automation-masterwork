@@ -17,7 +17,6 @@ public class TLIST01_Listing extends BaseTest {
         homeacces.linkToHomeAccess.click ();
         wait.until ( ExpectedConditions.urlContains
                 ( "http://test-automation-shop1.greenfox.academy/8-home-accessories" ) );
-        // assertet megcsinálni - Assertions.assertThat ( ()).isTrue ();
-
+        Assertions.assertThat (homeacces.homeAccessNumber ()).isEqualTo ( 8 );
     }
 }
