@@ -53,7 +53,7 @@ public class TNEW_DataSavingCsv {
     }
 
     @AfterEach
-    public void cleanup() {
+    public void cleanUp() {
         driver.quit();
     }
 }
