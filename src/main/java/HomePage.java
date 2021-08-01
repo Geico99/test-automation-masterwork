@@ -23,12 +23,19 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"category-8\"]")
     WebElement linkToHomeAccess;
 
+    @FindBy(xpath = "//*[id=\"content\"]/selection/a")
+    WebElement linkAllProducts;
+
     public WebElement getSignInLink() {
         return linkToSignIn;
     }
 
     public WebElement getInputToSearch() {
         return inputToSearch;
+    }
+    public WebElement getLinkAllProducts(){
+        return linkAllProducts;
+
     }
 
     public WebElement getLinkToAddress(){
