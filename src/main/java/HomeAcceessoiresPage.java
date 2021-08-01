@@ -13,4 +13,8 @@ public class HomeAcceessoiresPage extends BasePage{
     public WebElement getHomeAccess(){
         return linkToHomeAccess;
     }
+    public boolean isLoaded (){
+        return driver.getTitle ().equals ( "Accessoires" ) && driver.getCurrentUrl ().equals
+                ( "http://test-automation-shop1.greenfox.academy/6-accessories?q=Categories-Home+Accessories" );
+    }
 }
