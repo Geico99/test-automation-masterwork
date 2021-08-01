@@ -35,4 +35,8 @@ public class HomePage extends BasePage {
         driver.get ( "http://test-automation-shop1.greenfox.academy" );
         linkToSignIn.click ();
     }
+    public boolean isLoaded (){
+        return driver.getTitle ().equals ( "PrestaShop" ) && driver.getCurrentUrl ()
+                .equals ( "http://test-automation-shop1.greenfox.academy/" );
+    }
 }

@@ -20,4 +20,8 @@ public class TermAndCondPage extends BasePage{
     public void closeTermPage(){
         driver.close ();
     }
+    public boolean isLoaded(){
+        return driver.getTitle ().equals ( "Terms and conditions of use" ) && driver.getCurrentUrl ().equals
+                ("http://test-automation-shop1.greenfox.academy/content/3-terms-and-conditions-of use"  );
+    }
 }
