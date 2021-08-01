@@ -9,8 +9,6 @@ public class NewAddressPage extends BasePage {
     public NewAddressPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[1]/div[1]/input")
-    WebElement aliasInput;
 
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[5]/div[1]/input")
     WebElement addressInput;
@@ -28,9 +26,8 @@ public class NewAddressPage extends BasePage {
         driver.get("http://test-automation-shop1.greenfox.academy/addresses");
     }
 
-    public void createNewAddress(String alias, String address, String city,
+    public void createNewAddress(String address, String city,
                                  String state, String postalcode, String country) {
-        aliasInput.sendKeys ( alias );
         addressInput.sendKeys ( address );
         cityInput.sendKeys ( city );
         Select states = new Select(driver.findElement ( By.name ("id_name") ));
