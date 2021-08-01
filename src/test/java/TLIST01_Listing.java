@@ -1,20 +1,23 @@
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TLIST01_Listing extends BaseTest {
 
     @Test
-    public void listingAccessoriesFromLowToHighPrice() {
-
-        driver.findElement(
-                        By.xpath("//*[@id=\"category-6\"]/a")).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath
-                ("//*[@id=\"facet_96018\"]/li[1]/label/span/span"))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath
-                ("//*[@id=\"js-product-list-top\"]/div[2]/div/div[1]/button")));
-
-        //ellenőrizni a megjelent termékeket
+    @DisplayName ( "Listing home accessoires TLIST01 OK" )
+    public void listingHomeAccessoires (){
+        HomePage home = PageFactory.initElements ( driver, HomePage.class );
+        HomeAcceessoiresPage homeacces = PageFactory.initElements ( driver, HomeAcceessoiresPage.class );
+        home.navigateToHomeAccess ();
+        Assertions.assertThat (homeacces.isLoaded ()).isTrue ();
+        homeacces.linkToHomeAccess.click ();
+        wait.until ( ExpectedConditions.urlContains
+                ( "http://test-automation-shop1.greenfox.academy/8-home-accessories" ) );
+        // assertet megcsinálni - Assertions.assertThat ( ()).isTrue ();
 
     }
 }

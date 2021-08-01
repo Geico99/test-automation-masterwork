@@ -20,6 +20,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"footer_account_list\"]/li[4]/a")
     WebElement linkToAddress;
 
+    @FindBy(xpath = "//*[@id=\"category-8\"]")
+    WebElement linkToHomeAccess;
+
     public WebElement getSignInLink() {
         return linkToSignIn;
     }
@@ -38,5 +41,9 @@ public class HomePage extends BasePage {
     public boolean isLoaded (){
         return driver.getTitle ().equals ( "PrestaShop" ) && driver.getCurrentUrl ()
                 .equals ( "http://test-automation-shop1.greenfox.academy/" );
+    }
+    public void navigateToHomeAccess (){
+        driver.get ( "http://test-automation-shop1.greenfox.academny/" );
+
     }
 }
