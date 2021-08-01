@@ -1,7 +1,6 @@
 import java.util.Iterator;
 import java.util.Set;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,6 +59,10 @@ public class RegPage extends BasePage {
 
     public WebElement getSaveButton() {
         return saveButton;
+    }
+    public boolean isLoaded () {
+        return driver.getTitle ().equals ( "Login" ) && driver.getCurrentUrl ()
+                .equals ( "http://test-automation-shop1.greenfox.academy/login?create_account=1" );
     }
     public void navigateToReg(){
         HomePage home = PageFactory.initElements ( driver, HomePage.class );
