@@ -28,14 +28,14 @@ public class HomePage extends BasePage {
 
     public WebElement getSignInLink() {
         return linkToSignIn;
-    }
 
+    }
     public WebElement getInputToSearch() {
         return inputToSearch;
+
     }
     public WebElement getLinkAllProducts(){
         return linkAllProducts;
-
     }
 
     public WebElement getLinkToAddress(){
@@ -50,7 +50,10 @@ public class HomePage extends BasePage {
                 .equals ( "http://test-automation-shop1.greenfox.academy/" );
     }
     public void navigateToHomeAccess (){
-        driver.get ( "http://test-automation-shop1.greenfox.academny/" );
+        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
 
+    }
+    public void navigatToAddress (){
+        linkToAddress.click ();
     }
 }
