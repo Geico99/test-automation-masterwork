@@ -1,15 +1,21 @@
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TOUT01_LogOut extends BaseTest {
 
         @Test
+        @DisplayName ( "Testing logOut, TOUT01 OK" )
         public void logOut() {
-            login();
-            driver.findElement(By.xpath("//*[@id=\"_desktop_user_info\"]/div/a[1]")).click();
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath
-                    ("//*[@id=\"main\"]/header/h1")));
-
+            HomePage home = PageFactory.initElements ( driver, HomePage.class );
+            LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
+            home.navigatToSignIn ();
+            Assertions.assertThat (login.beforeLogin ()).isTrue ();
+            login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
+            Assertions.assertThat ( login.afterLogin ()).isTrue ();
+            home.linkToSignIn.click ();
         }
 }

@@ -13,7 +13,7 @@ public class TLOG01_LoginOk extends BaseTest {
     LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
     home.navigatToSignIn ();
     login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
-        Assertions.assertThat ();
+        Assertions.assertThat (login.afterLogin ()).isTrue ();
     }
 }
 

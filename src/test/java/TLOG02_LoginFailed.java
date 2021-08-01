@@ -14,9 +14,6 @@ public class TLOG02_LoginFailed extends BaseTest{
         LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
         home.navigatToSignIn ();
         login.login ( "kissbelaa@gmai.com", "kissgezaalegjobb" );
-        wait.until ( ExpectedConditions.visibilityOfElementLocated
-                ( By.xpath ( "//*[@id=\"content\"]/section/div/ul/li" ) ) );
-        Assertions.assertThat ();
-
+        Assertions.assertThat (login.afterLogin ()).isFalse ();
     }
 }
