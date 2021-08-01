@@ -13,7 +13,6 @@ public class TSAVE01_SavingData extends BaseTest{
         reg.navigateToReg ();
         reg.termAndConditionLink.click ();
         Assertions.assertThat ( term.isLoaded() ).isTrue ();
-        term.textCopyToFile
-
+        term.copyToFile ();
     }
 }
