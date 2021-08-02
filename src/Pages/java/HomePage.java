@@ -1,7 +1,10 @@
 import org.jsoup.Connection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.Locale;
 
 public class HomePage extends BasePage {
 
@@ -9,6 +12,7 @@ public class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super ( driver );
+        this.action = new Actions ( driver );
     }
 
     @FindBy(xpath = "//*[@id=\"_desktop_user_info\"]/div/a")
@@ -37,6 +41,13 @@ public class HomePage extends BasePage {
     public WebElement getLinkAllProducts(){
         return linkAllProducts;
     }
+    public void navigateToHomeAccess (){
+        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
+
+    }
+    public void navigatToAddress (){
+        linkToAddress.click ();
+    }
 
     public WebElement getLinkToAddress(){
         return linkToAddress;
@@ -49,11 +60,11 @@ public class HomePage extends BasePage {
         return driver.getTitle ().equals ( "PrestaShop" ) && driver.getCurrentUrl ()
                 .equals ( "http://test-automation-shop1.greenfox.academy/" );
     }
-    public void navigateToHomeAccess (){
-        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
-
-    }
-    public void navigatToAddress (){
-        linkToAddress.click ();
+    public boolean isSignedIn() {
+        String signStatus = linkToSignIn.getText ();
+        if (signStatus.toLowerCase ( Locale.ROOT ).equals ( "signed in" )) {
+            return true;
+        }
+        return false;
     }
 }

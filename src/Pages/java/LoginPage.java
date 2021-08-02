@@ -18,10 +18,10 @@ public class LoginPage extends BasePage{
     WebElement signInButton;
 
     @FindBy(xpath = "//*[@id=\"content\"]/div/a")
-    WebElement createNewAccount;
+    WebElement createNewAccountLink;
 
     public void navigateToRegPage(){
-        createNewAccount.click ();
+        createNewAccountLink.click ();
     }
 
     public void login(String email, String password) {
