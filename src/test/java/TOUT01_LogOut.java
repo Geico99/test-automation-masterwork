@@ -17,9 +17,9 @@ public class TOUT01_LogOut extends BaseTest {
             login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
             Assertions.assertThat ( login.afterLogin () ).isTrue ();
             home.linkToSignIn.click ();
+            Assertions.assertThat ( login.beforeLogin () ).isTrue ();
             }
         home.linkToSignIn.click ();
         Assertions.assertThat ( login.beforeLogin () ).isTrue ();
-        }
     }
 }
