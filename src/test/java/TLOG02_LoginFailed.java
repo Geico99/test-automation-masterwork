@@ -13,7 +13,7 @@ public class TLOG02_LoginFailed extends BaseTest{
         HomePage home = PageFactory.initElements ( driver, HomePage.class );
         LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
         home.navigatToSignIn ();
-        login.login ( "kissbelaa@gmai.com", "kissgezaalegjobb" );
+        login.login ( "kissbelaa@gmail.com", "kissgezaalegjobb" );
         Assertions.assertThat (login.afterLogin ()).isFalse ();
     }
 }
