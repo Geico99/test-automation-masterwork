@@ -3,11 +3,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AddressPage extends BasePage{
+public class AddressPage extends BasePage {
 
     public AddressPage(WebDriver driver) {
-        super(driver);
+        super ( driver );
     }
+
     @FindBy(partialLinkText = "Create new address")
     WebElement linkToCreateNewAddress;
 
@@ -23,25 +24,35 @@ public class AddressPage extends BasePage{
     @FindBy(xpath = "//*[@id=\"content\"]/form/div/div[2]/input")
     WebElement continueButton;
 
-    public void toNewAddressPage (){
+    public void toNewAddressPage() {
         linkToCreateNewAddress.click ();
     }
-    public boolean isLoaded (){
+
+    public boolean isLoaded() {
         return driver.getTitle ().equals ( "Address" ) && driver.getCurrentUrl ()
                 .equals ( "http://test-automation-shop1.greenfox.academy/addresses" );
     }
-    public void deleteFirstAddress(){
+
+    public void deleteFirstAddress() {
         deleteFirstAddressButton.click ();
     }
-    public void updateFirstAddress(){
+
+    public void updateFirstAddress() {
         updateFirstAddressButton.click ();
     }
+
     public boolean addressUpdatedMessage() {
         return addressMessage.isDisplayed () &&
                 addressMessage.getText ().equals ( "Address successfully updated!" );
     }
-    public boolean addressDeleteMessage (){
+
+    public boolean addressDeleteMessage() {
         return addressMessage.isDisplayed () &&
                 addressMessage.getText ().equals ( "Address Successfully deleted!" );
+    }
+
+    public boolean addNewAddressMessage() {
+        return addressMessage.isDisplayed () &&
+                addressMessage.getText ().equals ( "Address successfully added!" );
     }
 }

@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,6 +8,7 @@ public class TDEL01_DeletingData extends BaseTest{
 
     @Test
     @DisplayName ( "Deleting address data, TDEL01 OK" )
+    @Description (" Deleting address data and check")
 
     public void deleteData(){
 

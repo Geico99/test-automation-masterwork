@@ -1,4 +1,7 @@
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,29 +31,18 @@ public class TNEW_DataSavingCsv {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/addresses01.csv", numLinesToSkip = 1)
-    public void saveAddress(String address, String city, String postalCode) {
+    @Description ("Parameterized test from a txt file and fill addresses")
+    public void saveAddressFromCsv
+            (String address, String city, String state, String postalCode, String country) {
+        HomePage home = PageFactory.initElements ( driver, HomePage.class );
+        AddressPage addrs = PageFactory.initElements ( driver, AddressPage.class );
+        NewAddressPage newaddrs = PageFactory.initElements ( driver, NewAddressPage.class );
+        home.statusControl ();
+        home.navigatToAddress ();
+        addrs.toNewAddressPage ();
+        newaddrs.createNewAddress ( address, city, state, postalCode, country );
+        Assertions.assertThat ( addrs.addNewAddressMessage () ).isTrue ();
 
-        String email = "kissbelaa@gmail.com";
-        String password = "kissbelaalegjobb";
-
-        driver.findElement(By.xpath("//span[contains(text(),'Sign in')]")).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath
-                        ("//input[@name='email' and @class='form-control']"))).sendKeys(email);
-        driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
-        driver.findElement(By.id("submit-login")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated( By.xpath
-                ("//a[@title='View my customer account']"))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.id("address-link"))).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Ecommerce")));
-        driver.findElement(By.xpath("//input[@name='address1']")).sendKeys(address);
-        driver.findElement(By.xpath("//input[@name='city']")).sendKeys(city);
-        driver.findElement(By.xpath("//input[@name='postcode']")).sendKeys(postalCode);
-
-        Select state = new Select(driver.findElement(By.name("id_state")));
-        state.selectByVisibleText("California");
-        driver.findElement(By.xpath("//button[contains(text(),'Save')]")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath
-                ("//article[@data-alert='success']/ul/li[contains(text(),'Address successfully added!')]")));
     }
 
     @AfterEach

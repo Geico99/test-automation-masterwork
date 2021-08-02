@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +10,9 @@ public class TLIST01_Listing extends BaseTest {
 
     @Test
     @DisplayName ( "Listing home accessoires TLIST01 OK" )
+    @Description ("Listig home accessoires and check the number of the products")
     public void listingHomeAccessoires (){
+
         HomePage home = PageFactory.initElements ( driver, HomePage.class );
         HomeAcceessoiresPage homeacces = PageFactory.initElements ( driver, HomeAcceessoiresPage.class );
         home.navigateToHomeAccess ();
