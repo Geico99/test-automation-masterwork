@@ -24,13 +24,11 @@ public class BaseTest {
         props.load(is);
 
         WebDriverManager.chromedriver().setup();
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments(props.getProperty("chrome.arguments"));
-
-        driver = new ChromeDriver(chromeOptions);
+        driver = new ChromeDriver ();
         wait = new WebDriverWait(driver, 10);
         driver.manage().window().maximize ();
         js = (JavascriptExecutor)driver;
+        driver.manage ().deleteAllCookies ();
 
         driver.get ( "http://test-automation-shop1.greefox.academy/" );
         wait.until ( ExpectedConditions.visibilityOfElementLocated
@@ -40,6 +38,7 @@ public class BaseTest {
 
     @AfterEach
     public static void cleanUp() {
+        driver.close ();
         driver.quit();
     }
 
