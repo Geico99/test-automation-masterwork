@@ -42,7 +42,6 @@ public class TNEW_DataSavingCsv {
         addrs.toNewAddressPage ();
         newaddrs.createNewAddress ( address, city, state, postalCode, country );
         Assertions.assertThat ( addrs.addNewAddressMessage () ).isTrue ();
-
     }
 
     @AfterEach

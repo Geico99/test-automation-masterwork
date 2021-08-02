@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,7 @@ public class TLOG02_LoginFailed extends BaseTest{
 
     @Test
     @DisplayName ( "Login unsuccessful, not registred data found (TLOG02" )
+    @Description ( "Login unsuccessful, password is not valid")
     public void loginFailed(){
         HomePage home = PageFactory.initElements ( driver, HomePage.class );
         LoginPage login = PageFactory.initElements ( driver, LoginPage.class );

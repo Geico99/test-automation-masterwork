@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -6,7 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 public class TLOG01_LoginOk extends BaseTest {
 
     @Test
-    @DisplayName ( "Login succesful, (TLOG01 OK)" )
+    @DisplayName ( "Login successful, (TLOG01 OK)" )
+    @Description (" Login successful with valid data")
 
     public void successfullyLogin(){
     HomePage home = PageFactory.initElements ( driver, HomePage.class );

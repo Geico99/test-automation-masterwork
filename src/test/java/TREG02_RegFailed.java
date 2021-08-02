@@ -17,6 +17,6 @@ public class TREG02_RegFailed extends BaseTest {
                 reg.registrationData ( "Mr", "Kiss", "Bela", "kissbelaa@gmail.com", "kissbelaalegjobb" );
                 reg.getPrivacyCheck ().click ();
                 reg.getSaveButton ().click ();
-                Assertions.assertThat ( reg.isLoaded () ).isTrue ();
+                Assertions.assertThat ( home.isLoaded () ).isFalse ();
         }
 }
