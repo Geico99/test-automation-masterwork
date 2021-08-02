@@ -7,15 +7,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TOUT01_LogOut extends BaseTest {
 
-        @Test
-        @DisplayName ( "Testing logOut, TOUT01 OK" )
-        public void logOut() {
-            HomePage home = PageFactory.initElements ( driver, HomePage.class );
-            LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
+    @Test
+    @DisplayName("Testing logOut, TOUT01 OK")
+    public void logOut() {
+        HomePage home = PageFactory.initElements ( driver, HomePage.class );
+        LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
+        if (home.isNotSignedIn ()) {
             home.navigatToSignIn ();
-            Assertions.assertThat (login.beforeLogin ()).isTrue ();
             login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
-            Assertions.assertThat ( login.afterLogin ()).isTrue ();
+            Assertions.assertThat ( login.afterLogin () ).isTrue ();
             home.linkToSignIn.click ();
+            }
+        home.linkToSignIn.click ();
+        Assertions.assertThat ( login.beforeLogin () ).isTrue ();
         }
+    }
 }

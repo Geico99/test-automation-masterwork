@@ -68,9 +68,9 @@ public class HomePage extends BasePage {
                 .equals ( "http://test-automation-shop1.greenfox.academy/" );
     }
 
-    public boolean isSignedIn() {
+    public boolean isNotSignedIn() {
         String activeSignStatus = linkToSignIn.getText ();
-        if (activeSignStatus.toLowerCase ( Locale.ROOT ).equals ( "sign out" )) {
+        if (activeSignStatus.toLowerCase ( Locale.ROOT ).equals ( "sign in" )) {
             return true;
         }
         return false;
@@ -79,11 +79,8 @@ public class HomePage extends BasePage {
     public void statusControl() {
         HomePage home = PageFactory.initElements ( driver, HomePage.class );
         LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
-        if (home.isSignedIn ()) {
-            return
-                    { else }
+        if (home.isNotSignedIn ()) {
             login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
-
         }
     }
 }

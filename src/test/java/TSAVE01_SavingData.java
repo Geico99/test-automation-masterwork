@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,6 +8,7 @@ public class TSAVE01_SavingData extends BaseTest{
 
     @Test
     @DisplayName ( "Saving data from the app, TSAVE01 OK" )
+    @Description ("Saving the terms and conditions of use in a txt file")
     public void savingDataFromTheApp(){
         RegPage reg = PageFactory.initElements ( driver, RegPage.class );
         TermAndCondPage term = new TermAndCondPage ( driver );

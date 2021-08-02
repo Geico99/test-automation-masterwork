@@ -1,3 +1,4 @@
+import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,11 +10,11 @@ public class TREG02_RegFailed extends BaseTest {
 
         @Test
         @DisplayName ( "Registration unsuccessfully, TREG02 OK" )
+        @Description ( "Registration is unsuccessful because terms and conditions are not accepted")
         public void regFailed(){
                 HomePage home = PageFactory.initElements ( driver, HomePage.class );
                 RegPage reg = PageFactory.initElements ( driver, RegPage.class );
                 reg.registrationData ( "Mr", "Kiss", "Bela", "kissbelaa@gmail.com", "kissbelaalegjobb" );
-                reg.termAndConditionCheck.click ();
                 reg.getPrivacyCheck ().click ();
                 reg.getSaveButton ().click ();
                 Assertions.assertThat ( reg.isLoaded () ).isTrue ();
