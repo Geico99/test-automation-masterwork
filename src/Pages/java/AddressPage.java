@@ -40,4 +40,8 @@ public class AddressPage extends BasePage{
         return addressMessage.isDisplayed () &&
                 addressMessage.getText ().equals ( "Address successfully updated!" );
     }
+    public boolean addressDeleteMessage (){
+        return addressMessage.isDisplayed () &&
+                addressMessage.getText ().equals ( "Address Successfully deleted!" );
+    }
 }

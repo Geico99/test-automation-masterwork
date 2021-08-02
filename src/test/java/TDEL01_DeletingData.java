@@ -14,6 +14,7 @@ public class TDEL01_DeletingData extends BaseTest{
         AddressPage address = PageFactory.initElements ( driver, AddressPage.class );
         home.navigatToAddress ();
         address.deleteFirstAddress ();
-        Assertions.assertThat ( address.isLoaded () ).isTrue ();
+        Assertions.assertThat ( address.addressDeleteMessage ())
+                .isEqualTo ( "Address successfully deleted" );
     }
 }

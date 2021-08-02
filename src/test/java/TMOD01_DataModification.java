@@ -21,6 +21,7 @@ public class TMOD01_DataModification extends BaseTest {
         driver.findElement ( By.xpath
                 ("//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input") ).sendKeys ("New Jersey");
         address.continueButton.click ();
-        Assertions.assertThat ( address.addressUpdatedMessage ()).isEqualTo ( "Address successfully updated!" );
+        Assertions.assertThat ( address.addressUpdatedMessage ())
+                .isEqualTo ( "Address successfully updated!" );
     }
 }
