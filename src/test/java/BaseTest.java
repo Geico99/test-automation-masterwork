@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -40,7 +39,7 @@ public class BaseTest {
     }
 
     @AfterEach
-    public static void cleanup() {
+    public static void cleanUp() {
         driver.quit();
     }
 

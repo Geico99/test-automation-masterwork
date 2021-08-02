@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.Locale;
 
@@ -34,37 +35,55 @@ public class HomePage extends BasePage {
         return linkToSignIn;
 
     }
+
     public WebElement getInputToSearch() {
         return inputToSearch;
 
     }
-    public WebElement getLinkAllProducts(){
+
+    public WebElement getLinkAllProducts() {
         return linkAllProducts;
     }
-    public void navigateToHomeAccess (){
+
+    public void navigateToHomeAccess() {
         driver.get ( "http://test-automation-shop1.greenfox.academy/" );
 
     }
-    public void navigatToAddress (){
+
+    public void navigatToAddress() {
         linkToAddress.click ();
     }
 
-    public WebElement getLinkToAddress(){
+    public WebElement getLinkToAddress() {
         return linkToAddress;
     }
-    public void navigatToSignIn (){
+
+    public void navigatToSignIn() {
         driver.get ( "http://test-automation-shop1.greenfox.academy" );
         linkToSignIn.click ();
     }
-    public boolean isLoaded (){
+
+    public boolean isLoaded() {
         return driver.getTitle ().equals ( "PrestaShop" ) && driver.getCurrentUrl ()
                 .equals ( "http://test-automation-shop1.greenfox.academy/" );
     }
+
     public boolean isSignedIn() {
-        String signStatus = linkToSignIn.getText ();
-        if (signStatus.toLowerCase ( Locale.ROOT ).equals ( "signed in" )) {
+        String activeSignStatus = linkToSignIn.getText ();
+        if (activeSignStatus.toLowerCase ( Locale.ROOT ).equals ( "sign out" )) {
             return true;
         }
         return false;
+    }
+
+    public void statusControl() {
+        HomePage home = PageFactory.initElements ( driver, HomePage.class );
+        LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
+        if (home.isSignedIn ()) {
+            return
+                    { else }
+            login.login ( "kissbelaa@gmail.com", "kissbelaalegjobb" );
+
+        }
     }
 }

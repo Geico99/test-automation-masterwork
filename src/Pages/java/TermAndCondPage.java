@@ -28,11 +28,11 @@ public class TermAndCondPage extends BasePage{
     }
     public void copyToFile () {
         Path targeted = Paths.get ( "src" + File.separator + "Terms_and_conditons_of_use.txt" );
-        List<String> copiedtext = new ArrayList<> ();
+        List<String> copiedText = new ArrayList<> ();
         WebElement titleOfRules = driver.findElement ( By.id ( "content" ) );
-        copiedtext.add ( titleOfRules.getText () );
+        copiedText.add ( titleOfRules.getText () );
         try {
-            Files.write ( targeted, copiedtext );
+            Files.write ( targeted, copiedText );
         } catch (IOException e) {
             System.err.println ("Error: Terms and condition is not possible to write a file");
         }
