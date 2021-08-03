@@ -9,16 +9,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class TLIST01_Listing extends BaseTest {
 
     @Test
-    @DisplayName ( "Listing home accessoires TLIST01 OK" )
+    @DisplayName ("Listing home accessoires TLIST01 OK")
     @Description ("Listig home accessoires and check the number of the products")
-    public void listingHomeAccessoires (){
+    public void listingHomeAccessoires(){
 
-        HomePage home = PageFactory.initElements ( driver, HomePage.class );
-        HomeAcceessoiresPage homeacces = PageFactory.initElements ( driver, HomeAcceessoiresPage.class );
-        home.navigateToHomeAccess ();
+        HomePage home = PageFactory.initElements (driver, HomePage.class);
+        HomeAcceessoiresPage homeacces = PageFactory.initElements
+                (driver, HomeAcceessoiresPage.class);
+        home.navigateToHomeAccess();
         Assertions.assertThat (homeacces.isLoaded ()).isTrue ();
         homeacces.linkToHomeAccess.click ();
-        wait.until ( ExpectedConditions.urlContains
+        wait.until( ExpectedConditions.urlContains
                 ( "http://test-automation-shop1.greenfox.academy/8-home-accessories" ) );
         Assertions.assertThat (homeacces.homeAccessNumber ()).isEqualTo ( 8 );
     }

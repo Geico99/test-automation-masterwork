@@ -22,8 +22,8 @@ public class TNEW_DataSavingCsv {
 
     @BeforeEach
     void setup() {
-        WebDriverManager.chromedriver ().setup();
-        driver = new ChromeDriver ();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.get("http://test-automation-shop1.greenfox.academy/");
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, 15);
@@ -34,14 +34,14 @@ public class TNEW_DataSavingCsv {
     @Description ("Parameterized test from a txt file and fill addresses")
     public void saveAddressFromCsv
             (String address, String city, String state, String postalCode, String country) {
-        HomePage home = PageFactory.initElements ( driver, HomePage.class );
-        AddressPage addrs = PageFactory.initElements ( driver, AddressPage.class );
-        NewAddressPage newaddrs = PageFactory.initElements ( driver, NewAddressPage.class );
-        home.statusControl ();
-        home.navigatToAddress ();
-        addrs.toNewAddressPage ();
-        newaddrs.createNewAddress ( address, city, state, postalCode, country );
-        Assertions.assertThat ( addrs.addNewAddressMessage () ).isTrue ();
+        HomePage home = PageFactory.initElements (driver, HomePage.class);
+        AddressPage addrs = PageFactory.initElements (driver, AddressPage.class);
+        NewAddressPage newaddrs = PageFactory.initElements (driver, NewAddressPage.class);
+        home.statusControl();
+        home.navigatToAddress();
+        addrs.toNewAddressPage();
+        newaddrs.createNewAddress (address, city, state, postalCode, country);
+        Assertions.assertThat (addrs.addNewAddressMessage()).isTrue();
     }
 
     @AfterEach

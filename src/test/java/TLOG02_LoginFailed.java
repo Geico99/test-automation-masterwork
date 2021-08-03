@@ -9,13 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class TLOG02_LoginFailed extends BaseTest{
 
     @Test
-    @DisplayName ( "Login unsuccessful, not registred data found (TLOG02" )
-    @Description ( "Login unsuccessful, password is not valid")
+    @DisplayName ("Login unsuccessful, not registred data found (TLOG02")
+    @Description ("Login unsuccessful, password is not valid")
     public void loginFailed(){
-        HomePage home = PageFactory.initElements ( driver, HomePage.class );
-        LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
-        home.navigatToSignIn ();
-        login.login ( "kissbelaa@gmail.com", "kissgezaalegjobb" );
-        Assertions.assertThat (login.afterLogin ()).isFalse ();
+        HomePage home = PageFactory.initElements (driver, HomePage.class);
+        LoginPage login = PageFactory.initElements (driver, LoginPage.class);
+        home.navigatToSignIn();
+        login.login ("kissbelaa@gmail.com", "kissgezaalegjobb");
+        Assertions.assertThat(login.afterLogin()).isFalse();
     }
 }

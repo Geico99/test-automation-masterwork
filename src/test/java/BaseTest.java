@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-@TestInstance ( TestInstance.Lifecycle.PER_CLASS )
+@TestInstance (TestInstance.Lifecycle.PER_CLASS)
 public class BaseTest {
     protected static WebDriver driver = null;
     protected static WebDriverWait wait = null;
@@ -24,21 +24,21 @@ public class BaseTest {
         props.load(is);
 
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver ();
+        driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
-        driver.manage().window().maximize ();
+        driver.manage().window().maximize();
         js = (JavascriptExecutor)driver;
-        driver.manage ().deleteAllCookies ();
+        driver.manage().deleteAllCookies();
 
-        driver.get ( "http://test-automation-shop1.greefox.academy/" );
-        wait.until ( ExpectedConditions.visibilityOfElementLocated
-                (By.xpath ( "//*[@id=\"footer\"]/div[2]/div/div[3]/div/p/a" )) );
+        driver.get ("http://test-automation-shop1.greefox.academy/");
+        wait.until (ExpectedConditions.visibilityOfElementLocated (By.xpath
+                ( "//*[@id=\"footer\"]/div[2]/div/div[3]/div/p/a" )));
 
     }
 
     @AfterEach
     public static void cleanUp() {
-        driver.close ();
+        driver.close();
         driver.quit();
     }
 
