@@ -17,7 +17,7 @@ public class HomeAccessoiresPage extends BasePage{
         return linkToHomeAccess;
     }
     public boolean isLoaded (){
-        return driver.getTitle ().equals ( "Hoe accessories" ) && driver.getCurrentUrl ().equals
+        return driver.getTitle ().equals ( "Home accessories" ) && driver.getCurrentUrl ().equals
                 ( "http://test-automation-shop1.greenfox.academy/6-accessories?q=Categories-Home+Accessories" );
     }
     public int homeAccessNumber (){
