@@ -47,6 +47,7 @@ public class HomePage extends BasePage {
 
     public void navigateToHomeAccess() {
         driver.get ( "http://test-automation-shop1.greenfox.academy/" );
+        linkToHomeAccess.click ();
     }
 
     public void navigatToAddress() {
