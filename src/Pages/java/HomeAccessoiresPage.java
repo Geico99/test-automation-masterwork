@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class HomeAcceessoiresPage extends BasePage{
+public class HomeAccessoiresPage extends BasePage{
 
-    public HomeAcceessoiresPage(WebDriver driver) {
+    public HomeAccessoiresPage(WebDriver driver) {
        super(driver);
     }
     @FindBy(partialLinkText = "Home Accessories")
@@ -17,7 +17,7 @@ public class HomeAcceessoiresPage extends BasePage{
         return linkToHomeAccess;
     }
     public boolean isLoaded (){
-        return driver.getTitle ().equals ( "Accessoires" ) && driver.getCurrentUrl ().equals
+        return driver.getTitle ().equals ( "Hoe accessories" ) && driver.getCurrentUrl ().equals
                 ( "http://test-automation-shop1.greenfox.academy/6-accessories?q=Categories-Home+Accessories" );
     }
     public int homeAccessNumber (){
