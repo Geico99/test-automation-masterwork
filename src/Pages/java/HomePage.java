@@ -9,8 +9,6 @@ import java.util.Locale;
 
 public class HomePage extends BasePage {
 
-    WebDriver driver;
-
     public HomePage(WebDriver driver) {
         super ( driver );
         this.action = new Actions ( driver );
@@ -33,16 +31,18 @@ public class HomePage extends BasePage {
 
     public WebElement getSignInLink() {
         return linkToSignIn;
-
     }
 
     public WebElement getInputToSearch() {
         return inputToSearch;
-
     }
 
     public WebElement getLinkAllProducts() {
         return linkAllProducts;
+    }
+
+    public WebElement getLinkToAddress() {
+        return linkToAddress;
     }
 
     public void navigateToHomeAccess() {
@@ -51,11 +51,8 @@ public class HomePage extends BasePage {
     }
 
     public void navigatToAddress() {
+        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
         linkToAddress.click ();
-    }
-
-    public WebElement getLinkToAddress() {
-        return linkToAddress;
     }
 
     public void navigatToSignIn() {
