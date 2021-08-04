@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TDEL01_DeletingData extends Pages.BaseTest {
 
-    @Feature ("Data hangling test")
+    @Feature ("Data handling test")
 
     @Test
     @DisplayName ("Deleting address data, TDEL01 OK")

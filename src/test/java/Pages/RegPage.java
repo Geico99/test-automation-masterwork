@@ -96,7 +96,7 @@ public class RegPage extends BasePage {
         String regWindow = iterator.next ();
         String termWindow = iterator.next ();
         term.closeTermPage ();
-        driver.switchTo ().window ( regWindow );
+        driver.switchTo().window(regWindow);
     }
 
     public void switchWindow(){
