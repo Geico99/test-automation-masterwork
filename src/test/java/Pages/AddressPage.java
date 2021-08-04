@@ -26,6 +26,13 @@ public class AddressPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"content\"]/form/div/div[2]/input")
     WebElement continueButton;
 
+    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input")
+    WebElement cityInput;
+
+    public WebElement getCityInput() {
+        return cityInput;
+    }
+
     public void toNewAddressPage() {
         linkToCreateNewAddress.click ();
     }

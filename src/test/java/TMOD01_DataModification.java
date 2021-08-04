@@ -21,12 +21,8 @@ public class TMOD01_DataModification extends Pages.BaseTest {
         NewAddressPage newAddress = PageFactory.initElements(driver, NewAddressPage.class);
         home.navigatToAddress();
         address.updateFirstAddressButton.click();
-        driver.findElement(By.xpath
-                ("//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input")).click ();
-        driver.findElement(By.xpath
-                ("//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input")).clear ();
-        driver.findElement(By.xpath
-                ("//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input")).sendKeys("New Jersey");
+        address.getCityInput().clear ();
+        address.cityInput.sendKeys ( "New Yersey" );
         address.continueButton.click();
         Assertions.assertThat( address.addressUpdatedMessage())
                 .isEqualTo("Address successfully updated!");
