@@ -1,3 +1,5 @@
+package Pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,8 +15,9 @@ public class HomeAccessoiresPage extends BasePage{
     @FindBy(partialLinkText = "Home Accessories")
     WebElement linkToHomeAccess;
 
-    public WebElement getHomeAccess(){
+    public WebElement getLinkToHomeAccess() {
         return linkToHomeAccess;
+
     }
     public boolean isLoaded (){
         return driver.getTitle ().equals ( "Home accessories" ) && driver.getCurrentUrl ().equals

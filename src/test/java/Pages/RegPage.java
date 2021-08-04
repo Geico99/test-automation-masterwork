@@ -1,3 +1,5 @@
+package Pages;
+
 import java.util.Iterator;
 import java.util.Set;
 import org.openqa.selenium.WebDriver;
@@ -71,7 +73,7 @@ public class RegPage extends BasePage {
         login.navigateToRegPage ();
     }
     public void registrationData (String socialTitle, String firstName, String lastName,
-                                     String email, String password) {
+                                  String email, String password) {
         if (socialTitle.equals("Mr.")) {
             radioMale.click();
         } else {

@@ -1,8 +1,10 @@
+package Pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AllProductPage extends BasePage{
+public class AllProductPage extends BasePage {
 
     public AllProductPage(WebDriver driver){
         super(driver);
@@ -15,6 +17,6 @@ public class AllProductPage extends BasePage{
     }
     public boolean isLoaded(){
         return driver.getTitle ().equals ( "Home" ) && driver.getCurrentUrl ().equals
-                ( "http://test-automation-shop1-greenfox.academny/2-home" );
+                ("http://test-automation-shop1-greenfox.academny/2-home");
     }
 }

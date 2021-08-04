@@ -1,3 +1,5 @@
+package Pages;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InvalidObjectException;
@@ -11,7 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class TermAndCondPage extends BasePage{
+public class TermAndCondPage extends BasePage {
 
     public TermAndCondPage(WebDriver driver) {
         super(driver);
