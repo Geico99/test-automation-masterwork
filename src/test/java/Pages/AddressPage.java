@@ -39,6 +39,22 @@ public class AddressPage extends BasePage {
         deleteFirstAddressButton.click ();
     }
 
+    public WebElement getLinkToCreateNewAddress() {
+        return linkToCreateNewAddress;
+    }
+
+    public WebElement getUpdateFirstAddressButton() {
+        return updateFirstAddressButton;
+    }
+
+    public WebElement getContinueButton() {
+        return continueButton;
+    }
+
+    public WebElement getDeleteFirstAddressButton() {
+        return deleteFirstAddressButton;
+    }
+
     public void updateFirstAddress() {
         updateFirstAddressButton.click ();
     }

@@ -1,3 +1,6 @@
+package Pages;
+
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Attachment;
 import org.junit.jupiter.api.*;

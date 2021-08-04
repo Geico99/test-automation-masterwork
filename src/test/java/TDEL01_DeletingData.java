@@ -1,10 +1,12 @@
+package Pages;
+
 import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
-public class TDEL01_DeletingData extends BaseTest{
+public class TDEL01_DeletingData extends Pages.BaseTest {
 
     @Test
     @DisplayName ("Deleting address data, TDEL01 OK")

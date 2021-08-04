@@ -1,3 +1,5 @@
+package Pages;
+
 import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -6,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TREG02_RegFailed extends BaseTest {
+public class TREG02_RegFailed extends Pages.BaseTest {
 
         @Test
         @DisplayName ("Registration unsuccessfully, TREG02 OK")

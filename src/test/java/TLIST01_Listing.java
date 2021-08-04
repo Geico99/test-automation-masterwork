@@ -1,3 +1,4 @@
+package Pages;
 import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -5,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TLIST01_Listing extends BaseTest {
+public class TLIST01_Listing extends Pages.BaseTest {
 
     @Test
     @DisplayName ("Listing home accessoires TLIST01 OK")

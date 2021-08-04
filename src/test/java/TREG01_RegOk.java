@@ -1,3 +1,5 @@
+package Pages;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -5,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TREG01_RegOk extends BaseTest{
+public class TREG01_RegOk extends Pages.BaseTest {
 
     @Test
     @DisplayName ( "Registration successful, TREG01 OK" )

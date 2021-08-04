@@ -1,10 +1,12 @@
+package Pages;
+
 import io.qameta.allure.Description;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
-public class TSAVE01_SavingData extends BaseTest{
+public class TSAVE01_SavingData extends Pages.BaseTest {
 
     @Test
     @DisplayName ("Saving data from the app, TSAVE01 OK")

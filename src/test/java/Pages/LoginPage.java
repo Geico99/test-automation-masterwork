@@ -8,17 +8,24 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
-        super(driver);
+        super ( driver );
     }
 
-    @FindBy(xpath = "//*[@id=\"login-form\"]/section/div[1]/div[1]/input")
+    public void open(){
+            driver.get("http://test-automation-shop1.greenfox.academy/login?back=my-account");
+    }
+
+    @FindBy(name = "email")
     WebElement emailInput;
 
-    @FindBy(xpath = "//*[@id=\"login-form\"]/section/div[2]/div[1]/div/input")
+    @FindBy(name = "password")
     WebElement passwordInput;
 
     @FindBy(id = "submit-login")
     WebElement signInButton;
+
+    @FindBy(xpath = "//*[@id=\"content\"/section/div/ul/li")
+    WebElement loginErrorMessage;
 
     @FindBy(xpath = "//*[@id=\"content\"]/div/a")
     WebElement createNewAccountLink;

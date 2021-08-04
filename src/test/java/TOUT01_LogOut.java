@@ -1,3 +1,5 @@
+package Pages;
+
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -5,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TOUT01_LogOut extends BaseTest {
+public class TOUT01_LogOut extends Pages.BaseTest {
 
     @Test
     @DisplayName("Testing logOut, TOUT01 OK")

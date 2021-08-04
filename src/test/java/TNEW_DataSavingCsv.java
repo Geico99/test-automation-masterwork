@@ -1,3 +1,5 @@
+package Pages;
+
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;

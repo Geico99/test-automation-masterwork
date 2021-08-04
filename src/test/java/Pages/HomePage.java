@@ -10,10 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.Locale;
 
 public class HomePage extends BasePage {
+    WebDriver driver;
 
     public HomePage(WebDriver driver) {
         super ( driver );
         this.action = new Actions ( driver );
+    }
+    public void open(){
+        driver.get ("http://test-automation-shop1.greenfox.academny");
     }
 
     @FindBy(xpath = "//*[@id=\"_desktop_user_info\"]/div/a")

@@ -1,2 +1,44 @@
+TDEL01_DeletingData.java
+ Pages.TDEL01_DeletingData
+Pages/HomePage.java
+ Pages.HomePage
+TNEW_DataSavingCsv.java
+ Pages.TNEW_DataSavingCsv
+Pages/RegPage.java
+ Pages.RegPage
+TLIST01_Listing.java
+ Pages.TLIST01_Listing
+Pages/AddressPage.java
+ Pages.AddressPage
+Pages/AllProductPage.java
+ Pages.AllProductPage
+TMOD01_DataModification.java
+ Pages.TMOD01_DataModification
+TSAVE01_SavingData.java
+ Pages.TSAVE01_SavingData
+Pages/BasePage.java
+ Pages.BasePage
+Pages/TermAndCondPage.java
+ Pages.TermAndCondPage
+Pages/LoginPage.java
+ Pages.LoginPage
+Pages/NewAddressPage.java
+ Pages.NewAddressPage
+TINP01_InputNewData.java
+ Pages.TINP01_InputNewData
 BaseTest.java
- BaseTest
+ Pages.BaseTest
+Pages/HomeAccessoiresPage.java
+ Pages.HomeAccessoiresPage
+TLIST02_Pagination.java
+ Pages.TLIST02_Pagination
+TREG01_RegOk.java
+ Pages.TREG01_RegOk
+TOUT01_LogOut.java
+ Pages.TOUT01_LogOut
+TLOG01_LoginOk.java
+ Pages.TLOG01_LoginOk
+TLOG02_LoginFailed.java
+ Pages.TLOG02_LoginFailed
+TREG02_RegFailed.java
+ Pages.TREG02_RegFailed
