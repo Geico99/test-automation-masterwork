@@ -16,7 +16,7 @@ public class AllProductPage extends BasePage {
         return nextButton;
     }
     public boolean isLoaded(){
-        return driver.getTitle ().equals ( "Home" ) && driver.getCurrentUrl ().equals
+        return driver.getTitle().equals("Home")&& driver.getCurrentUrl().equals
                 ("http://test-automation-shop1-greenfox.academny/2-home");
     }
 }

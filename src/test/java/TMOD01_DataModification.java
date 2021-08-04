@@ -22,8 +22,7 @@ public class TMOD01_DataModification extends Pages.BaseTest {
         home.navigatToAddress();
         address.updateFirstAddressButton.click();
         address.getCityInput().clear ();
-        address.cityInput.sendKeys ( "New Yersey" );
-        address.continueButton.click();
+        newAddress.modifyAddress ( "New Yersey" );
         Assertions.assertThat( address.addressUpdatedMessage())
                 .isEqualTo("Address successfully updated!");
     }
