@@ -16,7 +16,7 @@ public class TINP01_InputNewData extends Pages.BaseTest {
 
     @Test
     @DisplayName ( "Input new data tested, TINP01 OK" )
-    @Description ("Entered the keyword shirt to search and checked one item with shirt keyword")
+    @Description ("Entered the keyword 'shirt' to search and checked one item with shirt keyword")
     public void inputNewData () {
         String keyword = "shirt";
         HomePage home = PageFactory.initElements(driver, HomePage.class);

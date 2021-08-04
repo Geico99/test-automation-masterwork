@@ -12,13 +12,13 @@ public class NewAddressPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[5]/div[1]/input")
+    @FindBy(name = "address1")
     WebElement addressInput;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[7]/div[1]/input")
+    @FindBy(name = "city")
     WebElement cityInput;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/section/div[9]/div[1]/input")
+    @FindBy(name = "postcode")
     WebElement postalCodeInput;
 
     @FindBy(xpath = "//*[@id=\"content\"]/div/div/form/footer/button")
