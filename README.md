@@ -8,4 +8,8 @@ Futtatási metódus és az automatizált tesztesetekhez szükséges információ
 - A tesztek Java nyelven kerültek megírásra IntelliJ IDEA segítségével Gradle projektben
 - A tesztek futtatásához először klónozza ezt a repositoryt
 - Nyissa meg a saját gépén a projektet IntelliJ és Gradle segítségével
-- Adja ki a gradle test parancsot az IntelliJ terminalján keresztül
+- Az Allure futtatásához és a riportok megtekintéséhez az alábbi parancsokat szükséges a terminálban futtatni
+- 	A teszt elött "gradlew clean test"
+- 	A teszt után "greadlew allureReport"
+- 	illetve az "gradlew allureServe" vagy "allure serve build/allure-results"
+- A parancsok futtatásához szükséges lehet a "./"parancs használata a közvetlen a felsorolt parancsok előtt
