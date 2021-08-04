@@ -24,19 +24,19 @@ public class RegPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[1]/div[1]/label[2]/span/input")
     WebElement radioFemale;
 
-    @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[2]/div[1]/input")
+    @FindBy(name = "firstname")
     WebElement firstNameInput;
 
-    @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[3]/div[1]/input")
+    @FindBy(name = "lastname")
     WebElement lastNameInput;
 
-    @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[4]/div[1]/input")
+    @FindBy(name = "email")
     WebElement emailInput;
 
-    @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[5]/div[1]/div/input")
+    @FindBy(name = "password")
     WebElement passwordInput;
 
-    @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[8]/div[1]/span/label/input")
+    @FindBy(name = "customer_privacy")
     WebElement privacyCheck;
 
     @FindBy(xpath = "//*[@id=\"customer-form\"]/section/div[10]/div[1]/span/label/input")
@@ -102,6 +102,5 @@ public class RegPage extends BasePage {
     public void switchWindow(){
         Set<String> allWindowHandles = driver.getWindowHandles();
         driver.switchTo().window ( "allWindowHandles" );
-
     }
 }

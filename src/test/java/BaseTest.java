@@ -31,7 +31,6 @@ public class BaseTest {
         driver.manage().window().maximize();
         js = (JavascriptExecutor)driver;
         driver.manage().deleteAllCookies();
-
         driver.get ("http://test-automation-shop1.greefox.academy/");
         wait.until (ExpectedConditions.visibilityOfElementLocated (By.xpath
                 ( "//*[@id=\"footer\"]/div[2]/div/div[3]/div/p/a" )));

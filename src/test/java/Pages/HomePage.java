@@ -15,9 +15,6 @@ public class HomePage extends BasePage {
         super ( driver );
 
     }
-    public void open(){
-        driver.get ("http://test-automation-shop1.greenfox.academny");
-    }
 
     @FindBy(xpath = "//*[@id=\"_desktop_user_info\"]/div/a")
     WebElement linkToSignIn;
