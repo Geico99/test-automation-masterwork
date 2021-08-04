@@ -1,12 +1,15 @@
 package Pages;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
 public class TLOG01_LoginOk extends Pages.BaseTest {
+
+    @Feature ("Login/logout feature")
 
     @Test
     @DisplayName ("Login successful, (TLOG01 OK)")

@@ -1,5 +1,6 @@
 package Pages;
 
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TREG01_RegOk extends Pages.BaseTest {
+
+    @Feature ("Customer registration")
 
     @Test
     @DisplayName ( "Registration successful, TREG01 OK" )

@@ -1,5 +1,6 @@
 package Pages;
 
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,8 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TOUT01_LogOut extends Pages.BaseTest {
 
+    @Feature ("Login/Logout feature" )
+
     @Test
-    @DisplayName("Testing logOut, TOUT01 OK")
+    @DisplayName("Testing logout, TOUT01 OK")
     public void logOut() {
         HomePage home = PageFactory.initElements (driver, HomePage.class);
         LoginPage login = PageFactory.initElements (driver, LoginPage.class);

@@ -1,6 +1,7 @@
 package Pages;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TLOG02_LoginFailed extends Pages.BaseTest {
+
+    @Feature("Login/logout feature")
 
     @Test
     @DisplayName ("Login unsuccessful, not registred data found (TLOG02")

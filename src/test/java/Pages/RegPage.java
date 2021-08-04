@@ -2,6 +2,8 @@ package Pages;
 
 import java.util.Iterator;
 import java.util.Set;
+
+import org.assertj.core.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -71,6 +73,7 @@ public class RegPage extends BasePage {
         RegPage regpage = PageFactory.initElements ( driver, RegPage.class );
         home.navigatToSignIn ();
         login.navigateToRegPage ();
+        Assertions.assertThat(regpage.isLoaded()).isTrue();
     }
     public void registrationData (String socialTitle, String firstName, String lastName,
                                   String email, String password) {
@@ -94,5 +97,11 @@ public class RegPage extends BasePage {
         String termWindow = iterator.next ();
         term.closeTermPage ();
         driver.switchTo ().window ( regWindow );
+    }
+
+    public void switchWindow(){
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        driver.switchTo().window ( "allWindowHandles" );
+
     }
 }
