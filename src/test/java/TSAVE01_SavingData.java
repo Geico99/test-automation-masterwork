@@ -1,5 +1,6 @@
-package Pages;
 
+import Pages.RegPage;
+import Pages.TermAndCondPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
@@ -7,7 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
-public class TSAVE01_SavingData extends Pages.BaseTest {
+public class TSAVE01_SavingData extends BaseTest {
 
     @Feature ("Customer registration")
 
@@ -18,7 +19,7 @@ public class TSAVE01_SavingData extends Pages.BaseTest {
         RegPage reg = PageFactory.initElements(driver, RegPage.class);
         TermAndCondPage term = new TermAndCondPage (driver);
         reg.navigateToReg();
-        reg.termAndConditionLink.click();
+        reg.getTermAndConditionCheck().click();
         reg.switchWindow();
         Assertions.assertThat(term.isLoaded()).isTrue();
         term.copyToFile();

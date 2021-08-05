@@ -1,5 +1,6 @@
-package Pages;
 
+import Pages.HomePage;
+import Pages.RegPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
@@ -9,7 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TREG02_RegFailed extends Pages.BaseTest {
+public class TREG02_RegFailed extends BaseTest {
 
         @Feature ("Customer registration")
 

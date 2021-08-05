@@ -1,5 +1,7 @@
-package Pages;
 
+import Pages.AddressPage;
+import Pages.HomePage;
+import Pages.NewAddressPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
@@ -8,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
-public class TMOD01_DataModification extends Pages.BaseTest {
+public class TMOD01_DataModification extends BaseTest {
 
     @Feature ("Data hangling test")
 
@@ -20,7 +22,7 @@ public class TMOD01_DataModification extends Pages.BaseTest {
         AddressPage address = PageFactory.initElements(driver , AddressPage.class);
         NewAddressPage newAddress = PageFactory.initElements(driver, NewAddressPage.class);
         home.navigatToAddress();
-        address.updateFirstAddressButton.click();
+        address.getUpdateFirstAddressButton().click();
         address.getCityInput().clear ();
         newAddress.modifyAddress ( "New Yersey" );
         Assertions.assertThat( address.addressUpdatedMessage())

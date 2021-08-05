@@ -1,5 +1,6 @@
-package Pages;
 
+import Pages.HomePage;
+import Pages.LoginPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
@@ -9,7 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TLOG02_LoginFailed extends Pages.BaseTest {
+public class TLOG02_LoginFailed extends BaseTest {
 
     @Feature("Login/logout feature")
 

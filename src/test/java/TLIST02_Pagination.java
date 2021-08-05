@@ -1,12 +1,13 @@
-package Pages;
 
+import Pages.AllProductPage;
+import Pages.HomePage;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TLIST02_Pagination extends Pages.BaseTest {
+public class TLIST02_Pagination extends BaseTest {
 
     @Test
     @DisplayName("Pagination test, TLIST02 OK")

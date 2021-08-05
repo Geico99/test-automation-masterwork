@@ -17,11 +17,11 @@ public class BasePage {
 
     BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = (WebDriver) new WebDriverWait ( driver, 15 );
-        PageFactory.initElements ( driver, this );
+        this.wait = (WebDriver) new WebDriverWait(driver, 15);
+        PageFactory.initElements(driver, this);
     }
     @Attachment("Screenshop")
     public byte[] makeScreenshop(){
-        return ((TakesScreenshot) driver).getScreenshotAs ( OutputType.BYTES );
+        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
     }
 }

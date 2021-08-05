@@ -38,8 +38,8 @@ public class AddressPage extends BasePage {
     }
 
     public boolean isLoaded() {
-        return driver.getTitle ().equals ( "Address" ) && driver.getCurrentUrl ()
-                .equals ( "http://test-automation-shop1.greenfox.academy/addresses" );
+        return driver.getTitle().equals("Address") && driver.getCurrentUrl()
+                .equals("http://test-automation-shop1.greenfox.academy/addresses");
     }
 
     public void deleteFirstAddress() {
@@ -63,21 +63,21 @@ public class AddressPage extends BasePage {
     }
 
     public void updateFirstAddress() {
-        updateFirstAddressButton.click ();
+        updateFirstAddressButton.click();
     }
 
     public boolean addressUpdatedMessage() {
-        return addressMessage.isDisplayed () &&
-                addressMessage.getText ().equals ( "Address successfully updated!" );
+        return addressMessage.isDisplayed() &&
+                addressMessage.getText().equals ("Address successfully updated!");
     }
 
     public boolean addressDeleteMessage() {
         return addressMessage.isDisplayed () &&
-                addressMessage.getText ().equals ( "Address Successfully deleted!" );
+                addressMessage.getText().equals("Address Successfully deleted!");
     }
 
     public boolean addNewAddressMessage() {
-        return addressMessage.isDisplayed () &&
-                addressMessage.getText ().equals ( "Address successfully added!" );
+        return addressMessage.isDisplayed() &&
+                addressMessage.getText().equals("Address successfully added!");
     }
 }

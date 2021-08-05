@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a49fcf04-3af9-4bbb-8bb2-c03af5f7b96c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/csv-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules/TestAutomationMasterwork.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules/TestAutomationMasterwork.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules/TestAutomationMasterwork.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/classes/java/test/Pages/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TDEL01_DeletingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TDEL01_DeletingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TINP01_InputNewData.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TINP01_InputNewData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TLIST01_Listing.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TLIST01_Listing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TLIST02_Pagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TLIST02_Pagination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TLOG01_LoginOk.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TLOG01_LoginOk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TLOG02_LoginFailed.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TLOG02_LoginFailed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TMOD01_DataModification.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TMOD01_DataModification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TNEW_DataSavingCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TNEW_DataSavingCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TOUT01_LogOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TOUT01_LogOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TREG01_RegOk.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TREG01_RegOk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TREG02_RegFailed.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TREG02_RegFailed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/TSAVE01_SavingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/TSAVE01_SavingData.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1wJzTbJx9TKCHBCvsUkgKuP92CE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a49fcf04-3af9-4bbb-8bb2-c03af5f7b96c" name="Changes" comment="" />
+      <created>1628191487501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628191487501</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

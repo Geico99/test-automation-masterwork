@@ -1,5 +1,6 @@
-package Pages;
 
+import Pages.HomePage;
+import Pages.LoginPage;
 import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class TOUT01_LogOut extends Pages.BaseTest {
+public class TOUT01_LogOut extends BaseTest {
 
     @Feature ("Login/Logout feature" )
 
@@ -21,10 +22,10 @@ public class TOUT01_LogOut extends Pages.BaseTest {
             home.navigatToSignIn();
             login.login ("kissbelaa@gmail.com", "kissbelaalegjobb");
             Assertions.assertThat(login.afterLogin()).isTrue();
-            home.linkToSignIn.click();
+            home.getSignInLink().click();
             Assertions.assertThat(login.beforeLogin()).isTrue();
             }
-        home.linkToSignIn.click();
+        home.getSignInLink().click();
         Assertions.assertThat (login.beforeLogin()).isTrue();
     }
 }
