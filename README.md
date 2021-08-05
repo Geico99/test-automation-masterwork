@@ -12,5 +12,5 @@ Futtatási metódus és az automatizált tesztesetekhez szükséges információ
 - Az Allure futtatásához és a riportok megtekintéséhez az alábbi parancsokat szükséges a terminálban futtatni
 - 	A teszt elött "gradlew clean test" illetve 
 - 	A teszt után "greadlew allureReport"
-- 	illetve az "gradlew allureServe" vagy "allure serve build/allure-results"
+- 	illetve a "gradlew allureServe" vagy "allure serve build/allure-results"
 - A parancsok futtatásához szükséges lehet a "./"parancs használata közvetlenül a felsoroltak előtt.
