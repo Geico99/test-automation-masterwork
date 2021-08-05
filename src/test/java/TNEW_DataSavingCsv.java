@@ -39,9 +39,4 @@ public class TNEW_DataSavingCsv extends BaseTest {
         newaddrs.createNewAddress (address, city, state, postalCode, country);
         Assertions.assertThat (addrs.addNewAddressMessage()).isTrue();
     }
-
-    @AfterEach
-    public void cleanUp() {
-        driver.quit();
-    }
 }
