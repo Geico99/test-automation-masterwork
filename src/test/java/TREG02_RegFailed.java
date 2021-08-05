@@ -15,8 +15,8 @@ public class TREG02_RegFailed extends BaseTest {
         @Feature ("Customer registration")
 
         @Test
-        @DisplayName ("Registration unsuccessfully, TREG02 OK")
-        @Description ("Registration is unsuccessful because terms and conditions are not accepted")
+        @DisplayName("Registration unsuccessfully, TREG02 OK")
+        @Description("Registration is unsuccessful because terms and conditions are not accepted")
         public void regFailed(){
                 HomePage home = PageFactory.initElements(driver, HomePage.class);
                 RegPage reg = PageFactory.initElements(driver, RegPage.class);

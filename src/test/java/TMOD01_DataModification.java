@@ -24,7 +24,7 @@ public class TMOD01_DataModification extends BaseTest {
         home.navigatToAddress();
         address.getUpdateFirstAddressButton().click();
         address.getCityInput().clear ();
-        newAddress.modifyAddress ( "New Yersey" );
+        newAddress.modifyAddress("New Yersey");
         Assertions.assertThat( address.addressUpdatedMessage())
                 .isEqualTo("Address successfully updated!");
     }

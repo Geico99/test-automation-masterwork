@@ -20,13 +20,13 @@ public class HomeAccessoiresPage extends BasePage{
 
     }
     public boolean isLoaded (){
-        return driver.getTitle ().equals ( "Home accessories" ) && driver.getCurrentUrl ().equals
-                ( "http://test-automation-shop1.greenfox.academy/6-accessories?q=Categories-Home+Accessories" );
+        return driver.getTitle().equals("Home accessories") && driver.getCurrentUrl().equals
+                ("http://test-automation-shop1.greenfox.academy/6-accessories?q=Categories-Home+Accessories" );
     }
     public int homeAccessNumber (){
         int productnumber = 0;
-        List<WebElement> listed = driver.findElements ( By.xpath ("//*[@id=\"js-product-list\"]"));
-        productnumber = listed.size ();
+        List<WebElement> listed = driver.findElements(By.xpath("//*[@id=\"js-product-list\"]"));
+        productnumber = listed.size();
         return productnumber;
     }
 }

@@ -39,12 +39,12 @@ public class LoginPage extends BasePage {
         passwordInput.sendKeys(password);
         signInButton.click();
     }
-    public boolean beforeLogin (){
-        return driver.getTitle ().equals ( "Login" ) && driver.getCurrentUrl ()
-                .equals ( "http://test-automation-shop1.greenfox.academny/login?back=my-account" );
+    public boolean beforeLogin(){
+        return driver.getTitle().equals("Login") && driver.getCurrentUrl()
+                .equals( "http://test-automation-shop1.greenfox.academny/login?back=my-account" );
     }
-    public boolean afterLogin () {
-        return driver.getTitle ().equals ( "My account" ) && driver.getCurrentUrl ()
-                .equals ( "http://test-automation-shop1.greenfox.academy/myaccount" );
+    public boolean afterLogin() {
+        return driver.getTitle().equals("My account") && driver.getCurrentUrl()
+                .equals("http://test-automation-shop1.greenfox.academy/myaccount");
     }
 }

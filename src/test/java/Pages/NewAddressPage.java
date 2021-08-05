@@ -30,19 +30,19 @@ public class NewAddressPage extends BasePage {
 
     public void createNewAddress(String address, String city,
                                  String state, String postalcode, String country) {
-        addressInput.sendKeys ( address );
-        cityInput.sendKeys ( city );
-        Select states = new Select(driver.findElement ( By.name ("id_name") ));
-        states.selectByVisibleText ( state );
-        postalCodeInput.sendKeys ( postalcode );
-        Select countries = new Select ( driver.findElement ( By.name ( "id_country" ) ) );
-        countries.selectByVisibleText ( country );
-        saveButton.click ();
+        addressInput.sendKeys(address);
+        cityInput.sendKeys(city);
+        Select states = new Select(driver.findElement(By.name("id_name")));
+        states.selectByVisibleText( state );
+        postalCodeInput.sendKeys(postalcode);
+        Select countries = new Select ( driver.findElement(By.name ("id_country")));
+        countries.selectByVisibleText(country);
+        saveButton.click();
     }
     public void modifyAddress(String adrs){
-        addressInput.clear ();
-        addressInput.sendKeys ( adrs );
-        saveButton.click ();
+        addressInput.clear();
+        addressInput.sendKeys(adrs);
+        saveButton.click();
     }
 }
 

@@ -64,43 +64,43 @@ public class RegPage extends BasePage {
         return saveButton;
     }
     public boolean isLoaded () {
-        return driver.getTitle ().equals ( "Login" ) && driver.getCurrentUrl ()
+        return driver.getTitle().equals("Login") && driver.getCurrentUrl()
                 .equals ( "http://test-automation-shop1.greenfox.academy/login?create_account=1" );
     }
     public void navigateToReg(){
-        HomePage home = PageFactory.initElements ( driver, HomePage.class );
-        LoginPage login = PageFactory.initElements ( driver, LoginPage.class );
-        RegPage regpage = PageFactory.initElements ( driver, RegPage.class );
-        home.navigatToSignIn ();
-        login.navigateToRegPage ();
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        LoginPage login = PageFactory.initElements(driver, LoginPage.class);
+        RegPage regpage = PageFactory.initElements(driver, RegPage.class);
+        home.navigatToSignIn();
+        login.navigateToRegPage();
         Assertions.assertThat(regpage.isLoaded()).isTrue();
     }
-    public void registrationData (String socialTitle, String firstName, String lastName,
+    public void registrationData(String socialTitle, String firstName, String lastName,
                                   String email, String password) {
         if (socialTitle.equals("Mr.")) {
             radioMale.click();
         } else {
             radioFemale.click();
         }
-        firstNameInput.sendKeys ( firstName );
-        lastNameInput.sendKeys ( lastName );
-        emailInput.sendKeys ( email );
-        passwordInput.sendKeys ( password );
+        firstNameInput.sendKeys(firstName);
+        lastNameInput.sendKeys(lastName);
+        emailInput.sendKeys(email);
+        passwordInput.sendKeys(password);
     }
     public void openAndClosePrivacy(){
-        RegPage regPage = PageFactory.initElements ( driver, RegPage.class );
-        TermAndCondPage term = new TermAndCondPage ( driver );
-        regPage.termAndConditionLink.click ();
-        Set<String> window = driver.getWindowHandles ();
-        Iterator<String> iterator = window.iterator ();
-        String regWindow = iterator.next ();
-        String termWindow = iterator.next ();
-        term.closeTermPage ();
+        RegPage regPage = PageFactory.initElements(driver, RegPage.class);
+        TermAndCondPage term = new TermAndCondPage(driver);
+        regPage.termAndConditionLink.click();
+        Set<String> window = driver.getWindowHandles();
+        Iterator<String> iterator = window.iterator();
+        String regWindow = iterator.next();
+        String termWindow = iterator.next();
+        term.closeTermPage();
         driver.switchTo().window(regWindow);
     }
 
     public void switchWindow(){
         Set<String> allWindowHandles = driver.getWindowHandles();
-        driver.switchTo().window ( "allWindowHandles" );
+        driver.switchTo().window("allWindowHandles");
     }
 }

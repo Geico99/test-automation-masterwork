@@ -47,18 +47,18 @@ public class HomePage extends BasePage {
     }
 
     public void navigateToHomeAccess() {
-        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
+        driver.get("http://test-automation-shop1.greenfox.academy/");
         linkToHomeAccess.click ();
     }
 
     public void navigatToAddress() {
-        driver.get ( "http://test-automation-shop1.greenfox.academy/" );
+        driver.get("http://test-automation-shop1.greenfox.academy/");
         linkToAddress.click ();
     }
 
     public void navigatToSignIn() {
-        driver.get ( "http://test-automation-shop1.greenfox.academy" );
-        linkToSignIn.click ();
+        driver.get("http://test-automation-shop1.greenfox.academy");
+        linkToSignIn.click();
     }
 
     public boolean isLoaded() {

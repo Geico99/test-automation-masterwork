@@ -23,7 +23,7 @@ public class TDEL01_DeletingData extends BaseTest {
         home.statusControl();
         home.navigatToAddress();
         address.deleteFirstAddress();
-        Assertions.assertThat ( address.addressDeleteMessage())
+        Assertions.assertThat(address.addressDeleteMessage())
                 .isEqualTo("Address successfully deleted");
     }
 }

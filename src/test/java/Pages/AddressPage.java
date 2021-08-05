@@ -72,7 +72,7 @@ public class AddressPage extends BasePage {
     }
 
     public boolean addressDeleteMessage() {
-        return addressMessage.isDisplayed () &&
+        return addressMessage.isDisplayed() &&
                 addressMessage.getText().equals("Address Successfully deleted!");
     }
 

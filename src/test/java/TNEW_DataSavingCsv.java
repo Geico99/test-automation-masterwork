@@ -36,7 +36,7 @@ public class TNEW_DataSavingCsv extends BaseTest {
         home.statusControl();
         home.navigatToAddress();
         addrs.toNewAddressPage();
-        newaddrs.createNewAddress (address, city, state, postalCode, country);
-        Assertions.assertThat (addrs.addNewAddressMessage()).isTrue();
+        newaddrs.createNewAddress(address, city, state, postalCode, country);
+        Assertions.assertThat(addrs.addNewAddressMessage()).isTrue();
     }
 }
