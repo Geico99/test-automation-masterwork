@@ -1,4 +1,4 @@
-###### A mestermunka témája az adott URL-en található "Prestashop" elnevezésű webshop tesztelése a megadott szempontok és a várható vásárlói viselkedés alapján.
+##### A mestermunka témája az adott URL-en található "Prestashop" elnevezésű webshop tesztelése a megadott szempontok és a várható vásárlói viselkedés alapján.
 
 Masterwork website [url](http://test-automation-shop1.greenfox.academy)
 
