@@ -10,7 +10,7 @@ Futtatási metódus és az automatizált tesztesetekhez szükséges információ
 - A tesztek futtatásához először klónozza ezt a repositoryt
 - Nyissa meg a saját gépén a projektet IntelliJ és Gradle segítségével. A tesztek futtatásához használja a ./gradlew test, vagy a gradlew test parancsot.
 - Az Allure futtatásához és a riportok megtekintéséhez az alábbi parancsokat szükséges a terminálban futtatni
-- 	A teszt elött "gradlew clean test" illetve 
-- 	A teszt után "greadlew allureReport"
-- 	illetve a "gradlew allureServe" vagy "allure serve build/allure-results"
-- A parancsok futtatásához szükséges lehet a "./"parancs használata közvetlenül a felsoroltak előtt.
+     - A teszt elött "gradlew clean test" illetve 
+     - A teszt után "greadlew allureReport"
+     - illetve a "gradlew allureServe" vagy "allure serve build/allure-results"
+- FYKI - A parancsok futtatásához szükséges lehet a "./"parancs használata közvetlenül a felsoroltak előtt.

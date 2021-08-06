@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TSAVE01_SavingData extends BaseTest {
 
-    @Feature ("Customer registration")
+    @Feature ("Data saving")
 
     @Test
     @DisplayName ("Saving data from the app, TSAVE01 OK")
