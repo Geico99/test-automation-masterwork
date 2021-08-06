@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fec9037-693b-4fd6-95fb-aeb3b00f95e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TSAVE01_SavingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TSAVE01_SavingData.java" afterDir="false" />
-    </list>
+    <list default="true" id="4fec9037-693b-4fd6-95fb-aeb3b00f95e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/src/test/java/TNEW_DataSavingCsv.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/TSAVE01_SavingData.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/TLIST02_Pagination.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/TINP01_InputNewData.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/TDEL01_DeletingData.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/Pages/TermAndCondPage.java" root0="SKIP_INSPECTION" />
