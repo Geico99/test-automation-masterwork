@@ -14,3 +14,4 @@ Futtatási metódus és az automatizált tesztesetekhez szükséges információ
      - A teszt után "greadlew allureReport"
      - illetve a "gradlew allureServe" vagy "allure serve build/allure-results"
 - FYKI - A parancsok futtatásához szükséges lehet a "./"parancs használata közvetlenül a felsoroltak előtt.
+- FYI - A MacOS által automatikusan generált DS fájlok ignorálására a gitignore kifejezetten mentori kérésére került a projektbe.
