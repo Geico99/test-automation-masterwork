@@ -1,6 +1,6 @@
 Masterwork website url: http://test-automation-shop1.greenfox.academy
 
-A mestermunka témája az adott URL-en található "Prestashop" elnevezésű webshop tesztelése a megadott szempontok alapján.
+A mestermunka témája az adott URL-en található "Prestashop" elnevezésű webshop tesztelése a megadott szempontok és a várható vásárlói viselkedés alapján.
 
 Manuális tesztesetek - Google SpreadSheets link: https://docs.google.com/spreadsheets/d/1UHG6rrlVBIwq-19tXDOrEtEhtXXLZlG6cJ0u9gdhJnI/edit?usp=sharing
 
