@@ -25,7 +25,7 @@ public class HomeAccessoiresPage extends BasePage{
     }
     public int homeAccessNumber (){
         int productnumber = 0;
-        List<WebElement> listed = driver.findElements(By.xpath("//*[@id=\"js-product-list\"]"));
+        List<WebElement> listed = driver.findElements(By.id ("products"));
         productnumber = listed.size();
         return productnumber;
     }
