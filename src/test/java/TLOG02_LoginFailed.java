@@ -15,7 +15,7 @@ public class TLOG02_LoginFailed extends BaseTest {
     @Feature("Login/logout feature")
 
     @Test
-    @DisplayName ("Login unsuccessful, not registred data found (TLOG02")
+    @DisplayName ("Login unsuccessful, not registred data found ,TLOG02")
     @Description ("Login unsuccessful, password is not valid")
     public void loginFailed(){
         HomePage home = PageFactory.initElements(driver, HomePage.class);

@@ -4,6 +4,7 @@ import Pages.HomePage;
 import Pages.NewAddressPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,6 +26,7 @@ public class TNEW_DataSavingCsv extends BaseTest {
     WebDriverWait wait;
 
     @ParameterizedTest
+    @Feature("Testing data import")
     @DisplayName ("New addresses from a Csv")
     @CsvFileSource(resources = "/addresses01.csv", numLinesToSkip = 1)
     @Description ("Parameterized test from a txt file and fill addresses")
