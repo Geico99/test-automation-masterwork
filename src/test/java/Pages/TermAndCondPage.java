@@ -31,8 +31,8 @@ public class TermAndCondPage extends BasePage {
     public void copyToFile() {
         Path targeted = Paths.get("src" + File.separator + "Terms_and_conditons_of_use.txt");
         List<String> copiedText = new ArrayList<> ();
-        WebElement titleOfRules = driver.findElement(By.id ( "content" ));
-        copiedText.add(titleOfRules.getText ());
+        WebElement titleOfRules = driver.findElement(By.id("content"));
+        copiedText.add(titleOfRules.getText());
         try {
             Files.write(targeted, copiedText);
         } catch(IOException e) {
